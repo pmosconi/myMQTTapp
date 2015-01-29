@@ -1,0 +1,4 @@
+C:\Users\Paolo Mosconi\AndroidStudioProjects\myMQTTapp\app\build\intermediates\classes\debug
+C:\Users\Paolo Mosconi\AndroidStudioProjects\myMQTTapp\app\build\intermediates\pre-dexed\debug\org.eclipse.paho.android.service-1.0.1-86eb0250818c9c26bfa2162bca31eb0d50f63e89.jar
+C:\Users\Paolo Mosconi\AndroidStudioProjects\myMQTTapp\app\build\intermediates\pre-dexed\debug\org.eclipse.paho.client.mqttv3-1.0.1-adcae898cdfa5d2b30530eb98d57e5e28c34be28.jar
+C:\Users\Paolo Mosconi\AndroidStudioProjects\myMQTTapp\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-b68de412cfc3fe619fbb5300fdbcd929ab997880.jar

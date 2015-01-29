@@ -1,0 +1,148 @@
+<!-- 
+Licensed Materials - Property of IBM
+
+5747-SM3
+
+(C) Copyright IBM Corp. 1999, 2012 All Rights Reserved.
+
+US Government Users Restricted Rights - Use, duplication or
+disclosure restricted by GSA ADP Schedule Contract with
+IBM Corp.
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/subscribeGroup"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp" >
+
+        <TextView
+            android:id="@+id/textSubscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/receive"
+            android:layout_marginRight="25dip" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/subscribeGroup"
+            android:layout_toEndOf="@+id/subscribeGroup">
+
+
+            <CheckBox
+                android:id="@+id/subscribeMessageCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:ems="10"
+                android:layout_weight="0.22"
+                android:contentDescription="@string/contentSubscribeMessage"
+                android:checked="true"
+                android:text="@string/subscribeMessage" />
+
+            <CheckBox
+                android:id="@+id/subscribeAlarmCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:ems="10"
+                android:layout_weight="0.22"
+                android:contentDescription="@string/contentSubscribeAlarm"
+                android:checked="true"
+                android:text="@string/subscribeAlarm" />
+
+            <CheckBox
+                android:id="@+id/subscribeStatusCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:ems="10"
+                android:layout_weight="0.22"
+                android:contentDescription="@string/contentSubscribeStatus"
+                android:text="@string/subscribeStatus" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topicSubViewGroup"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/topicTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dip"
+            android:text="@string/topic" />
+
+        <EditText
+            android:id="@+id/topic"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.22"
+            android:layout_width="0dip"
+            android:ems="10"
+            android:hint="@string/topicHint"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+<!-- INVISIBLE -->
+
+    <LinearLayout
+        android:id="@+id/qosSubGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topicSubViewGroup"
+        android:layout_marginTop="25dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/qosSubTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/qos" />
+
+        <RadioGroup
+            android:id="@+id/qosSubRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/qos0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/qos0"
+                />
+
+            <RadioButton
+                android:id="@+id/qos1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qos1" />
+
+            <RadioButton
+                android:id="@+id/qos2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qos2" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
